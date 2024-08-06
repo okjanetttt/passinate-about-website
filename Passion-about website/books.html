@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Turners</title>
+    <style>
+      body {
+        background: linear-gradient(to bottom, #493945 0%, #ffabff 100%);
+        color: #333;
+        margin: 60px auto;
+        font-family: 'Arial', sans-serif;
+        text-align: center;
+        width: 80%;
+      }
+
+      h1 {
+        color: #490b41;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        color: #000000;
+        margin: 20px 0;
+      }
+
+      p {
+        font-size: 18px;
+        margin: 20px 0;
+        color: #555;
+      }
+
+      img {
+        max-width: 50%;
+        border: 2px solid #000000;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+      }
+
+      button {
+        background-color: #490b41;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #3a1f63;
+      }
+
+      .container {
+        padding: 20px;
+        background: #ffffff98;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+      }
+
+      .learn-more {
+        color: #832977;
+        text-decoration: none;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        margin-top: 20px;
+        font-size: 14px;
+      }
+
+      .footer a {
+        color: #832977;
+      }
+
+      .footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Page Turners</h1>
+      <h2>Discover Your Next Favorite Book</h2>
+      <img
+        src="https://p16-va.lemon8cdn.com/tos-maliva-v-ac5634-us/oEBaBIicFfDAV6hAEyhzBQNRIAJloCZwgEkBM2~tplv-tej9nj120t-origin.webp" alt="Books"/>
+      <p>
+        Welcome to Page Turners! Dive into the world of books and discover
+        amazing stories, thrilling adventures, and captivating characters.
+      </p>
+      <a href="https://en.wikipedia.org/wiki/Romance_novel" target="_blank" class="learn-more">Learn more about books on Wikipedia</a>
+      <button class="buy-button">👉 Buy a Book</button>
+      <p class="footer">
+        This page was built by
+        <a href="" target="_blank">Bonolo Morake</a>
+      </p>
+    </div>
+
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let book = prompt("What is your favorite book?");
+
+        alert(
+          "Thank you, " +
+            name +
+            "! We'll be in touch by email. Meanwhile, enjoy reading " +
+            book +
+            "!"
+        );
+      }
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
